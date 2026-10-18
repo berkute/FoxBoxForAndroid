@@ -1,26 +1,5 @@
-<resources xmlns:tools="http://android.com">
-
-    <color name="material_orange_500">#FF9800</color>
-    <color name="material_orange_700">#F57C00</color>
-    <color name="material_orange_100">#FFE0B2</color>
-    <color name="material_orange_300">#FFB74D</color>
-    <color name="material_orange_accent_200">#FFAB40</color>
-    <color name="material_light_black">#212121</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="fab_color_progress">#212121</color>
-    <color name="color_pink_ssr">#FF9800</color>
-    <color name="color_ng_black_accent">#9E9E9E</color>
-    <color name="color_ng_black_primary">#2B2B2B</color>
-    <color name="preference_simple_menu_background">#FAFAFA</color>
-    <color name="chip_background">#E0E0E0</color>
-    <color name="chip_text_color">#212121</color>
-    <color name="chip_ripple_color">#BDBDBD</color>
-
-    <integer-array name="material_colors">
-        <item>@color/material_orange_500</item>
-    </integer-array>
-
+<resources>
+    <!-- Base application theme. -->
     <style name="Theme.SagerNet" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="actionBarStyle">@style/Widget.MaterialComponents.ActionBar.Solid</item>
         <item name="actionModeCloseDrawable">@drawable/ic_navigation_close</item>
@@ -48,13 +27,25 @@
         <item name="whiteOrTextPrimary">@color/white</item>
 
         <item name="windowActionModeOverlay">true</item>
+
+        <!-- Remove ActionBar but keep styles and themes -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
         <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Choice.SagerNet</item>
-        <item name="itemShapeAppearance">@style/ShapeAppearance.MaterialComponents.MediumComponent</item>
-        <item name="alertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet</item>
-        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet</item>
+
+        <item name="itemShapeAppearance">
+            @style/ShapeAppearance.MaterialComponents.MediumComponent
+        </item>
+
+        <item name="alertDialogTheme">
+            @style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet
+        </item>
+
+        <item name="materialAlertDialogTheme">
+            @style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet
+        </item>
+
     </style>
 
     <style name="Theme.SagerNet.Dialog" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
@@ -84,14 +75,27 @@
         <item name="whiteOrTextPrimary">@color/white</item>
 
         <item name="windowActionModeOverlay">true</item>
+
+        <!-- Remove ActionBar but keep styles and themes -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
         <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Choice.SagerNet</item>
-        <item name="itemShapeAppearance">@style/ShapeAppearance.MaterialComponents.MediumComponent</item>
-        <item name="alertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet</item>
-        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet</item>
+
+        <item name="itemShapeAppearance">
+            @style/ShapeAppearance.MaterialComponents.MediumComponent
+        </item>
+
+        <item name="alertDialogTheme">
+            @style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet
+        </item>
+
+        <item name="materialAlertDialogTheme">
+            @style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet
+        </item>
+
         <item name="windowFixedHeightMajor" type="dimen">95%</item>
+
     </style>
 
     <style name="AppearanceFoundation.Title" parent="TextAppearance.AppCompat.Title">
@@ -100,13 +104,24 @@
     </style>
 
     <style name="ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet">
-        <item name="buttonBarPositiveButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Primary</item>
-        <item name="buttonBarNegativeButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Primary</item>
-        <item name="buttonBarNeutralButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush.Primary</item>
+        <item name="buttonBarPositiveButtonStyle">
+            @style/Widget.MaterialComponents.Button.TextButton.Dialog.Primary
+        </item>
+        <item name="buttonBarNegativeButtonStyle">
+            @style/Widget.MaterialComponents.Button.TextButton.Dialog.Primary
+        </item>
+        <item name="buttonBarNeutralButtonStyle">
+            @style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush.Primary
+        </item>
     </style>
 
-    <style name="Widget.MaterialComponents.Button.TextButton.Dialog.Primary"><item name="android:textColor">?primaryOrTextPrimary</item></style>
-    <style name="Widget.MaterialComponents.Button.TextButton.Dialog.Flush.Primary"><item name="android:textColor">?primaryOrTextPrimary</item></style>
+    <style name="Widget.MaterialComponents.Button.TextButton.Dialog.Primary">
+        <item name="android:textColor">?primaryOrTextPrimary</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.Button.TextButton.Dialog.Flush.Primary">
+        <item name="android:textColor">?primaryOrTextPrimary</item>
+    </style>
 
     <style name="Widget.MaterialComponents.Chip.Choice.SagerNet">
         <item name="textStartPadding">30dp</item>
@@ -117,36 +132,77 @@
         <item name="rippleColor">@color/chip_ripple_color</item>
     </style>
 
-    <style name="Theme.SagerNet.Orange"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.Dialog.Orange"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.Pink_SSR"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.Amber"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.Blue"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.BlueGrey"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.Brown"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.Cyan"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.DeepOrange"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.DeepPurple"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.Green"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.Grey"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.Indigo"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.LightBlue"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.LightGreen"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.Lime"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.Purple"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.Red"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.Teal"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.Yellow"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.Black"><item name="colorPrimary">@color/material_orange_500</item></style>
-    <style name="Theme.SagerNet.Dialog.Black"><item name="colorPrimary">@color/material_orange_500</item></style>
-
-    <style name="Theme.Start" parent="Theme.MaterialComponents.DayNight">
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="colorPrimary">@android:color/transparent</item>
-        <item name="colorPrimaryDark">@android:color/transparent</item>
-        <item name="android:backgroundDimEnabled">false</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <style name="Theme.SagerNet.Pink_SSR">
+        <item name="colorPrimary">@color/color_pink_ssr</item>
+        <item name="colorPrimaryDark">@color/color_pink_ssr</item>
+        <item name="colorAccent">@color/material_pink_accent_200</item>
+        <item name="colorMaterial100">@color/material_pink_accent_100</item>
+        <item name="colorMaterial300">@color/color_pink_ssr</item>
     </style>
-</resources>
+
+    <style name="Theme.SagerNet.Amber">
+        <item name="colorPrimary">@color/material_amber_500</item>
+        <item name="colorPrimaryDark">@color/material_amber_700</item>
+        <item name="colorAccent">@color/material_amber_accent_200</item>
+        <item name="colorMaterial100">@color/material_amber_100</item>
+        <item name="colorMaterial300">@color/material_amber_300</item>
+    </style>
+
+    <style name="Theme.SagerNet.Blue">
+        <item name="colorPrimary">@color/material_blue_500</item>
+        <item name="colorPrimaryDark">@color/material_blue_700</item>
+        <item name="colorAccent">@color/material_blue_accent_200</item>
+        <item name="colorMaterial100">@color/material_blue_100</item>
+        <item name="colorMaterial300">@color/material_blue_300</item>
+    </style>
+
+    <style name="Theme.SagerNet.BlueGrey">
+        <item name="colorPrimary">@color/material_blue_grey_500</item>
+        <item name="colorPrimaryDark">@color/material_blue_grey_700</item>
+        <item name="colorAccent">@color/material_blue_grey_200</item>
+        <item name="colorMaterial100">@color/material_blue_grey_100</item>
+        <item name="colorMaterial300">@color/material_blue_grey_300</item>
+    </style>
+
+    <style name="Theme.SagerNet.Brown">
+        <item name="colorPrimary">@color/material_brown_500</item>
+        <item name="colorPrimaryDark">@color/material_brown_700</item>
+        <item name="colorAccent">@color/material_brown_200</item>
+        <item name="colorMaterial100">@color/material_brown_100</item>
+        <item name="colorMaterial300">@color/material_brown_300</item>
+    </style>
+
+    <style name="Theme.SagerNet.Cyan">
+        <item name="colorPrimary">@color/material_cyan_500</item>
+        <item name="colorPrimaryDark">@color/material_cyan_700</item>
+        <item name="colorAccent">@color/material_cyan_accent_200</item>
+        <item name="colorMaterial100">@color/material_cyan_100</item>
+        <item name="colorMaterial300">@color/material_cyan_300</item>
+    </style>
+
+    <style name="Theme.SagerNet.DeepOrange">
+        <item name="colorPrimary">@color/material_deep_orange_500</item>
+        <item name="colorPrimaryDark">@color/material_deep_orange_700</item>
+        <item name="colorAccent">@color/material_deep_orange_accent_200</item>
+        <item name="colorMaterial100">@color/material_deep_orange_100</item>
+        <item name="colorMaterial300">@color/material_deep_orange_300</item>
+    </style>
+
+    <style name="Theme.SagerNet.DeepPurple">
+        <item name="colorPrimary">@color/material_deep_purple_500</item>
+        <item name="colorPrimaryDark">@color/material_deep_purple_700</item>
+        <item name="colorAccent">@color/material_deep_purple_accent_200</item>
+        <item name="colorMaterial100">@color/material_deep_purple_100</item>
+        <item name="colorMaterial300">@color/material_deep_purple_300</item>
+    </style>
+
+    <style name="Theme.SagerNet.Green">
+        <item name="colorPrimary">@color/material_green_500</item>
+        <item name="colorPrimaryDark">@color/material_green_700</item>
+        <item name="colorAccent">@color/material_green_accent_200</item>
+        <item name="colorMaterial100">@color/material_green_100</item>
+        <item name="colorMaterial300">@color/material_green_300</item>
+    </style>
+
+    <style name="Theme.SagerNet.Grey">
+        <item name="colorPrimary">@color/material_grey_500</item>
