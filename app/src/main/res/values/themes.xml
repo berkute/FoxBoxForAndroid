@@ -27,24 +27,13 @@
         <item name="whiteOrTextPrimary">@color/white</item>
 
         <item name="windowActionModeOverlay">true</item>
-
-        <!-- Remove ActionBar but keep styles and themes -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
         <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Choice.SagerNet</item>
-
-        <item name="itemShapeAppearance">
-            @style/ShapeAppearance.MaterialComponents.MediumComponent
-        </item>
-
-        <item name="alertDialogTheme">
-            @style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet
-        </item>
-
-        <item name="materialAlertDialogTheme">
-            @style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet
-        </item>
+        <item name="itemShapeAppearance">@style/ShapeAppearance.MaterialComponents.MediumComponent</item>
+        <item name="alertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet</item>
     </style>
 
     <style name="Theme.SagerNet.Dialog" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
@@ -74,25 +63,13 @@
         <item name="whiteOrTextPrimary">@color/white</item>
 
         <item name="windowActionModeOverlay">true</item>
-
-        <!-- Remove ActionBar but keep styles and themes -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
         <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Choice.SagerNet</item>
-
-        <item name="itemShapeAppearance">
-            @style/ShapeAppearance.MaterialComponents.MediumComponent
-        </item>
-
-        <item name="alertDialogTheme">
-            @style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet
-        </item>
-
-        <item name="materialAlertDialogTheme">
-            @style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet
-        </item>
-
+        <item name="itemShapeAppearance">@style/ShapeAppearance.MaterialComponents.MediumComponent</item>
+        <item name="alertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet</item>
         <item name="windowFixedHeightMajor" type="dimen">95%</item>
     </style>
 
@@ -102,24 +79,13 @@
     </style>
 
     <style name="ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet">
-        <item name="buttonBarPositiveButtonStyle">
-            @style/Widget.MaterialComponents.Button.TextButton.Dialog.Primary
-        </item>
-        <item name="buttonBarNegativeButtonStyle">
-            @style/Widget.MaterialComponents.Button.TextButton.Dialog.Primary
-        </item>
-        <item name="buttonBarNeutralButtonStyle">
-            @style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush.Primary
-        </item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Primary</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Primary</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush.Primary</item>
     </style>
 
-    <style name="Widget.MaterialComponents.Button.TextButton.Dialog.Primary">
-        <item name="android:textColor">?primaryOrTextPrimary</item>
-    </style>
-
-    <style name="Widget.MaterialComponents.Button.TextButton.Dialog.Flush.Primary">
-        <item name="android:textColor">?primaryOrTextPrimary</item>
-    </style>
+    <style name="Widget.MaterialComponents.Button.TextButton.Dialog.Primary"><item name="android:textColor">?primaryOrTextPrimary</item></style>
+    <style name="Widget.MaterialComponents.Button.TextButton.Dialog.Flush.Primary"><item name="android:textColor">?primaryOrTextPrimary</item></style>
 
     <style name="Widget.MaterialComponents.Chip.Choice.SagerNet">
         <item name="textStartPadding">30dp</item>
@@ -130,22 +96,29 @@
         <item name="rippleColor">@color/chip_ripple_color</item>
     </style>
 
-    <!-- Основная оранжевая палитра для FoxBox -->
-    <style name="Theme.SagerNet.Orange">
-        <item name="colorPrimary">@color/material_orange_500</item>
-        <item name="colorPrimaryDark">@color/material_orange_700</item>
-        <item name="colorAccent">@color/material_orange_accent_200</item>
-        <item name="colorMaterial100">@color/material_orange_100</item>
-        <item name="colorMaterial300">@color/material_orange_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.Orange">
-        <item name="colorPrimary">@color/material_orange_500</item>
-        <item name="colorPrimaryDark">@color/material_orange_700</item>
-        <item name="colorAccent">@color/material_orange_accent_200</item>
-        <item name="colorMaterial100">@color/material_orange_100</item>
-        <item name="colorMaterial300">@color/material_orange_300</item>
-    </style>
+    <!-- Заглушки для предотвращения ошибок линковки ресурсов -->
+    <style name="Theme.SagerNet.Orange"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Dialog.Orange"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Pink_SSR"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Amber"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Blue"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.BlueGrey"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Brown"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Cyan"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.DeepOrange"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.DeepPurple"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Green"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Grey"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Indigo"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.LightBlue"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.LightGreen"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Lime"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Purple"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Red"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Teal"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Yellow"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Black"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Dialog.Black"><item name="colorPrimary">@color/material_orange_500</item></style>
 
     <style name="Theme.Start" parent="Theme.MaterialComponents.DayNight">
         <item name="android:navigationBarColor">@android:color/transparent</item>
