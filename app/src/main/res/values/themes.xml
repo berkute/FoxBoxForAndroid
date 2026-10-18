@@ -1,16 +1,37 @@
-<resources>
-    <!-- Base application theme. -->
+<resources xmlns:tools="http://android.com">
+
+    <color name="material_orange_500">#FF9800</color>
+    <color name="material_orange_700">#F57C00</color>
+    <color name="material_orange_100">#FFE0B2</color>
+    <color name="material_orange_300">#FFB74D</color>
+    <color name="material_orange_accent_200">#FFAB40</color>
+    <color name="material_light_black">#212121</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fab_color_progress">#212121</color>
+    <color name="color_pink_ssr">#FF9800</color>
+    <color name="color_ng_black_accent">#9E9E9E</color>
+    <color name="color_ng_black_primary">#2B2B2B</color>
+    <color name="preference_simple_menu_background">#FAFAFA</color>
+    <color name="chip_background">#E0E0E0</color>
+    <color name="chip_text_color">#212121</color>
+    <color name="chip_ripple_color">#BDBDBD</color>
+
+    <integer-array name="material_colors">
+        <item>@color/material_orange_500</item>
+    </integer-array>
+
     <style name="Theme.SagerNet" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="actionBarStyle">@style/Widget.MaterialComponents.ActionBar.Solid</item>
         <item name="actionModeCloseDrawable">@drawable/ic_navigation_close</item>
         <item name="colorButtonNormal">?colorAccent</item>
         <item name="android:navigationBarColor">?colorPrimaryDark</item>
-        <item name="colorPrimary">#FF9800</item>
-        <item name="colorPrimaryDark">#E65100</item>
-        <item name="colorAccent">#FFCC80</item>
+        <item name="colorPrimary">@color/material_orange_500</item>
+        <item name="colorPrimaryDark">@color/material_orange_700</item>
+        <item name="colorAccent">@color/material_orange_accent_200</item>
 
-        <item name="colorMaterial100">#FFCC80</item>
-        <item name="colorMaterial300">#FF9800</item>
+        <item name="colorMaterial100">@color/material_orange_100</item>
+        <item name="colorMaterial300">@color/material_orange_300</item>
 
         <item name="accentOrTextSecondary">?colorAccent</item>
         <item name="accentOrTextPrimary">?colorAccent</item>
@@ -41,12 +62,12 @@
         <item name="actionModeCloseDrawable">@drawable/ic_navigation_close</item>
         <item name="colorButtonNormal">?colorAccent</item>
         <item name="android:navigationBarColor">?colorPrimaryDark</item>
-        <item name="colorPrimary">#FF9800</item>
-        <item name="colorPrimaryDark">#E65100</item>
-        <item name="colorAccent">#FFCC80</item>
+        <item name="colorPrimary">@color/material_orange_500</item>
+        <item name="colorPrimaryDark">@color/material_orange_700</item>
+        <item name="colorAccent">@color/material_orange_accent_200</item>
 
-        <item name="colorMaterial100">#FFCC80</item>
-        <item name="colorMaterial300">#FF9800</item>
+        <item name="colorMaterial100">@color/material_orange_100</item>
+        <item name="colorMaterial300">@color/material_orange_300</item>
 
         <item name="accentOrTextSecondary">?colorAccent</item>
         <item name="accentOrTextPrimary">?colorAccent</item>
@@ -96,29 +117,28 @@
         <item name="rippleColor">@color/chip_ripple_color</item>
     </style>
 
-    <!-- Перенаправляем все подтемы на оранжевый HEX-код -->
-    <style name="Theme.SagerNet.Orange"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.Dialog.Orange"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.Pink_SSR"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.Amber"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.Blue"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.BlueGrey"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.Brown"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.Cyan"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.DeepOrange"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.DeepPurple"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.Green"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.Grey"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.Indigo"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.LightBlue"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.LightGreen"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.Lime"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.Purple"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.Red"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.Teal"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.Yellow"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.Black"><item name="colorPrimary">#FF9800</item></style>
-    <style name="Theme.SagerNet.Dialog.Black"><item name="colorPrimary">#FF9800</item></style>
+    <style name="Theme.SagerNet.Orange"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Dialog.Orange"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Pink_SSR"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Amber"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Blue"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.BlueGrey"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Brown"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Cyan"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.DeepOrange"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.DeepPurple"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Green"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Grey"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Indigo"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.LightBlue"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.LightGreen"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Lime"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Purple"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Red"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Teal"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Yellow"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Black"><item name="colorPrimary">@color/material_orange_500</item></style>
+    <style name="Theme.SagerNet.Dialog.Black"><item name="colorPrimary">@color/material_orange_500</item></style>
 
     <style name="Theme.Start" parent="Theme.MaterialComponents.DayNight">
         <item name="android:navigationBarColor">@android:color/transparent</item>
